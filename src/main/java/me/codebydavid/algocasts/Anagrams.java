@@ -55,7 +55,7 @@ public class Anagrams {
     }
 
     private static String sortString(String str) {
-        char[] chars = str.toCharArray();
+        char[] chars = clean(str).toCharArray();
         Arrays.sort(chars);
         return new String(chars);
     }
