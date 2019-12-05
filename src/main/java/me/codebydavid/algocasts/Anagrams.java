@@ -1,9 +1,7 @@
 package me.codebydavid.algocasts;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -57,9 +55,9 @@ public class Anagrams {
     }
 
     private static String sortString(String str) {
-        List<String> chars = Arrays.asList(clean(str).split(""));
-        Collections.sort(chars);
-        return String.join("", chars);
+        char[] chars = str.toCharArray();
+        Arrays.sort(chars);
+        return new String(chars);
     }
 
 }
