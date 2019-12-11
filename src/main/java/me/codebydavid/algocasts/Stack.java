@@ -27,11 +27,13 @@ public class Stack {
     }
 
     public Object pop() {
-        return this.data.remove(this.data.size() - 1);
+        return this.data.size() > 0 ? 
+            this.data.remove(this.data.size() - 1) : null;
     }
 
     public Object peek() {
-        return this.data.get(this.data.size() - 1);
+        return this.data.size() > 0 ? 
+            this.data.get(this.data.size() - 1) : null;
     }
     
 }
