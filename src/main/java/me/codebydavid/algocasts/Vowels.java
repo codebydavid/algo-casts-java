@@ -3,9 +3,14 @@ package me.codebydavid.algocasts;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Vowels
- */
+// --- Directions
+// Write a function that returns the number of vowels
+// used in a string.  Vowels are the characters 'a', 'e'
+// 'i', 'o', and 'u'.
+// --- Examples
+//   vowels('Hi There!') --> 3
+//   vowels('Why do you ask?') --> 4
+//   vowels('Why?') --> 0
 public class Vowels {
 
     /**
